@@ -1,4 +1,3 @@
-import React from "react";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 
 const Resul = ({ data, del, edit }) => {
@@ -6,13 +5,13 @@ const Resul = ({ data, del, edit }) => {
     <div>
       <table className="flex items-center justify-center flex-col">
         <thead className="w-[100%]">
-          <tr className="flex justify-between  sm:justify-around p-2 ">
+          <tr className="flex justify-between   sm:justify-around p-2 ">
             <th className="text-xs sm:text-lg ">Description</th>
             <th className="text-xs sm:text-lg">Amount</th>
             <th className="mr-[15px] text-xs sm:text-lg ">Action</th>
           </tr>
         </thead>
-        <tbody className="w-[100%]">
+        <tbody className=" w-[100%]">
           {!data
             ? " "
             : data.map((item) => {
@@ -21,7 +20,7 @@ const Resul = ({ data, del, edit }) => {
                     key={item.id}
                     className="flex justify-between sm:justify-around p-2"
                   >
-                    <td className="w-[33%] text-start sm:text-center text-xs sm:text-xl">
+                    <td className="w-[33%] font-medium text-start sm:text-center text-xs sm:text-xl">
                       {" "}
                       {item.description}{" "}
                     </td>
